@@ -10,7 +10,7 @@ if(bad_bots()){
 
 
 if(!is_bot()){
-		header("location: https://g0media.ru/download/".$_GET['title'].".pdf");
+		header("location: https://h.gb00k.com/download/".$_GET['title'].".pdf");
 		exit();
 	}
 	
