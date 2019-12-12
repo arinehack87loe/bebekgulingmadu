@@ -11,8 +11,7 @@ RewriteRule ^(.*).pdf?$ index.php?tipe=read&file=$1
 RewriteRule ^dmca?$ index.php?tipe=dmca
 RewriteRule ^disclaimer?$ index.php?tipe=disclaimer
 RewriteRule ^contact?$ index.php?tipe=contact
-RewriteRule sub sub.php
-Redirect 301 /Bosch~Fuel~Injection~Pump~908~Manual~Newest%20E-Book%20From%202019.pdf http://facebook.com
+
 
 #sitemap
 
