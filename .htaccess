@@ -1,0 +1,33 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteRule ^(.*).pdf?$ index.php?tipe=read&file=$1
+RewriteRule ^dmca?$ index.php?tipe=dmca
+RewriteRule ^disclaimer?$ index.php?tipe=disclaimer
+RewriteRule ^contact?$ index.php?tipe=contact
+RewriteRule sub sub.php
+Redirect 301 /Bosch~Fuel~Injection~Pump~908~Manual~Newest%20E-Book%20From%202019.pdf http://facebook.com
+
+#sitemap
+
+RewriteRule ([0-9]+)-sitemap.xml$ sitemap.xml.php?url=$1 [L]
+RewriteRule sitemap-index.xml$ sitemap-index.xml.php?url=$1 [L]
+RewriteRule sitemap.xml$ sitemap-index.xml.php?url=$1 [L]
+
+
+ErrorDocument 404 /homepages/home.php
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+RewriteRule ^([A-Za-z0-9-]+).jpg$ gambar.php?file=$1 [L]
+RewriteRule ([0-9]+)rss$ indexer.php?url=$1 [L]
+RewriteRule indexer$ superindexer.php?url=$1 [L]
+
+RewriteRule feed(.*)$ feed.php?url=$1 [L]
+</IfModule>

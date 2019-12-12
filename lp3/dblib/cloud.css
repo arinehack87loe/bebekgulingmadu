@@ -1,0 +1,6 @@
+.online{color:#fff; font-size: 12px;position:fixed; bottom: 0;right:0; background:rgba(0,0,0,0.5);  width:180px; padding:10px; border-radius:5px 0 0 0;  }
+.online-icon{display: inline-block; background: url('/img/ajax_loading.gif') no-repeat; width:43px; height:11px;}
+.online-text{
+        width:140px;float:right;display: inline-block;
+}
+.online-text p{margin:0;}

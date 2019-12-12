@@ -1,0 +1,128 @@
+body {
+    background-image: url(../file/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+}
+
+.set-container {
+    padding: 7%;
+}
+.color-white {
+    color: #fff !important;
+}
+
+.shadone {
+    -webkit-box-shadow: -4px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: -4px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: -4px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.color-red {
+    color: #4f4f4f;
+}
+
+.color-grey {
+    color: #666666;
+}
+
+.par-0 {
+    padding-right: 0px !important;
+}
+
+.bg-red {
+    background: #4f4f4f;
+}
+
+.bg-white {
+    background: #fff;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1dce2+0,ffffff+100 */
+background: #e1dce2; /* Old browsers */
+background: -moz-linear-gradient(top,  #e1dce2 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #e1dce2 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #e1dce2 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1dce2', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+    border-radius: 20px
+}
+
+.bg-green {
+    background: #4f4f4f;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.spacing-110 {
+    height: 50px;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+.padding15 {
+    padding: 15px;
+}
+
+.bg-green-low {
+    background: #fefefe;
+}
+
+.bg-green-modal {
+    background: #1c92ff;
+}
+
+.spacing {
+    height: 30px;
+}
+
+.fn-12 {
+    font-size: 12px;
+}
+
+.nopadding {
+    padding: 0px !important;
+}
+
+.pab-20 {
+    padding-bottom: 20px !important;
+}
+
+.pat-20 {
+    padding-top: 20px !important;
+}
+
+.mat-10 {
+    margin-top: 10px !important;
+}
+
+.mat-15 {
+    margin-top: 15px !important;
+}
+
+.pat-0 {
+    padding-top: 0px !important;
+}
+
+.pat-10 {
+    padding-top: 10px !important;
+}
+
+.mat-0 {
+    margin-top: 0px !important;
+}
+
+.mab-0 {
+    margin-bottom: 0px !important;
+}
+
+.mab-5 {
+    margin-bottom: 5px !important;
+}
+
+@media screen and (max-device-width:568px) {
+    body {
+        background-image: url(../images/bg.png);
+        background-repeat: no-repeat;
+        background-size: 5657px !important;
+    }
+}
