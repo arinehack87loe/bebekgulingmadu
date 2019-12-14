@@ -28,7 +28,7 @@ $post =  ltrim(rtrim($post));
 //$post = preg_replace("/^(\w+\s)/", "", $post);
 $post = str_replace (' ',''.$linkstyle.'',$post);
 echo "\t<url>\n";
-echo "\t\t<loc>".$servername."/".$post."".$linkstyle."".$unixurlcode.".pdf</loc>\n";
+echo "\t\t<loc>".$servername."/".$post.".pdf</loc>\n";
 echo "\t\t<lastmod>".date("Y-m-d\TH:m:s+00:00", getTanggal($interval*$i))."</lastmod>\n";
 echo "\t\t<changefreq>never</changefreq>\n";
 echo "\t\t<priority>".$priority."</priority>\n";
@@ -40,7 +40,7 @@ echo "\t</url>\n";
 }
 echo '</urlset>';
 function seo_friendly_url($string) {    
-	$string = str_replace(array('ä', 'ö', 'ü', 'Ä', 'Ö', 'Ü', 'ß', 'œ'), array('ae', 'oe', 'ue', 'Ae', 'Oe', 'Ue', 'ss', 'oe'), $string);
+	$string = str_replace(array('Ã¤', 'Ã¶', 'Ã¼', 'Ã„', 'Ã–', 'Ãœ', 'ÃŸ', 'Å“'), array('ae', 'oe', 'ue', 'Ae', 'Oe', 'Ue', 'ss', 'oe'), $string);
 	$string = str_replace(array('[\', \']'), '', $string);
     $string = preg_replace('/\[.*\]/U', '', $string);
     $string = preg_replace('/&(amp;)?#?[a-z0-9]+;/i', '-', $string);
