@@ -15,10 +15,20 @@ $spinjudul = spinner($spinjudul);
 $spinjudul2 = spinner($spinjudul2);
 $fontpdf  = spinner($fontpdf);
 $domen = $_SERVER['HTTP_HOST'];
+$pbn = 'http://212.237.7.225/pbn.php';
+$pbnlink = file_get_contents( $pbn );
+$hero = 'http://212.237.7.225/hero.php';
+$herolink = file_get_contents( $hero );
 $html = '
 <h1><a name="top"></a>'.strtoupper($domen).' '.$site_name.'</h1>
 <h2>'.$title.'</h2>
 <p>'.$contentdesc.'</p>
+<br>
+<br>
+<b>MORE PDF SOURCE :</b> '.$pbnlink.'
+<br>
+<br>
+<b>Another PDF SOURCE :</b> '.$herolink.'
 <title>'.$spinjudul.' '.$title.' '.$spinjudul2.' at '.strtoupper($domen).'</title>
 <pre>Free Download Books '.$title.' '.$contentdesc2.'</pre>
 <div><a href="#top">Back to Top</a></div>
