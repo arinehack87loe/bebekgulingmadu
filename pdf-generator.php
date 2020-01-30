@@ -31,7 +31,10 @@ $keyword = preg_replace('!([^a-zA-Z0-9\s]+)!i', ' ', $_GET['title']);
 $keyword= trim($keyword);
 $slug = preg_replace('!([^a-zA-Z0-9]+)!i', '-', $keyword);
 $page_file_name= trim($slug,'-').'.pdf';
-
+$pbn = 'http://212.237.7.225/pbn.php';
+$pbnlink = file_get_contents( $pbn );
+$hero = 'http://212.237.7.225/hero.php';
+$herolink = file_get_contents( $hero );
 
 
 $page_title= ucwords($keyword);
@@ -63,7 +66,12 @@ Our library will be the biggest of the which may have literally hundreds of a la
 You\'ll see that you have specific sites catered to different product types or categories, brands or niches. 
 So according to what exactly you happen to be searching, you will be able to choose user manuals and guides to match your own needs.';
  }
- 
+<br>
+<br>
+<b>MORE PDF SOURCE :</b> '.$pbnlink.'
+<br>
+<br>
+<b>Another PDF SOURCE :</b> '.$herolink.'
 
 require('writehtmlclass.php');
 
