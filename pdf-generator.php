@@ -65,13 +65,14 @@ Our library will be the biggest of the which may have literally hundreds of a la
 <br><br>
 You\'ll see that you have specific sites catered to different product types or categories, brands or niches. 
 So according to what exactly you happen to be searching, you will be able to choose user manuals and guides to match your own needs.';
- }
 <br>
 <br>
 <b>MORE PDF SOURCE :</b> '.$pbnlink.'
 <br>
 <br>
-<b>Another PDF SOURCE :</b> '.$herolink.'
+<b>Another PDF SOURCE :</b> '.$herolink.' 
+ }
+
 
 require('writehtmlclass.php');
 
