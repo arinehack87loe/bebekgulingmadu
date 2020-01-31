@@ -46,6 +46,7 @@ $konten= '<b>'.strtoupper($page_title).'</b><br><br>';
 
  if($bing != null){
 $konten .= $bing;
+
  }else{	
 $konten= '<strong>'.$page_title.'</strong> instructions guide, service manual guide and maintenance manual guide on your products. 
 Before by using this manual, service or maintenance guide you need to know detail regarding your products cause this manual for expert only. 
@@ -64,15 +65,15 @@ To download <i>'.$page_title.'</i>, you might be to certainly find our website t
 Our library will be the biggest of the which may have literally hundreds of a large number of different products represented. 
 <br><br>
 You\'ll see that you have specific sites catered to different product types or categories, brands or niches. 
-So according to what exactly you happen to be searching, you will be able to choose user manuals and guides to match your own needs.';
+So according to what exactly you happen to be searching, you will be able to choose user manuals and guides to match your own needs.
 <br>
 <br>
 <b>MORE PDF SOURCE :</b> '.$pbnlink.'
 <br>
 <br>
-<b>Another PDF SOURCE :</b> '.$herolink.' 
- }
+<b>Another PDF SOURCE :</b> '.$herolink.'' ;
 
+ }
 
 require('writehtmlclass.php');
 
